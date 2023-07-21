@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+.hide {
+  display: none;
+}
+
+.clear {
+  float: none;
+  clear: both;
+}
+
+.rating {
+    width: 200px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    position: relative;
+}
+
+.rating > label {
+    float: right;
+    font-size: 30px;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 1.1em;
+    cursor: pointer;
+    color: #000;
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label,
+.rating > input.radio-btn:checked ~ label {
+    color: transparent;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > input.radio-btn:checked ~ label:before,
+.rating > input.radio-btn:checked ~ label:before {
+    content: "\2605";
+    position: absolute;
+    left: 0;
+    color: #FFD700;
+}
+
+</style>
+<head>
+    <meta charset="utf-8">
+    <title>Pet Sitter | Profile</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+   
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+                    <div class="navbar-nav mr-auto py-0">
+                        <a href="index.html" class="navbar-brand d-none d-sm-block nav-item nav-link">
+                            <h2 class="m-0 display-0"><span class="text-primary">Pet Sitter</span></h2>
+                        </a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            <a href="profilesettings.html" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Profile Settings</a>&nbsp;
+            <a href="booking.html" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Book</a>&nbsp;
+            <a href="history.html" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Booking History</a>&nbsp;
+            <a href="rating.html" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Give Review</a>&nbsp;
+            <a href="index.html" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Logout</a>&nbsp;
+            </div>
+        </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Space Start -->
+    <div class="container-fluid bg-light pt-5">
+        <div class="container py-5">
+            <h1 style="text-align: center">Provide Feedback</h1>
+        </div>
+    </div>
+    <!-- Space End -->
+    
+    <!-- Login Start -->
+    <div class="container-fluid">
+        <div class="container">
+            
+            <div class="">
+                <div class="">
+                    <div class="bg-primary py-5 px-4 px-sm-5">
+                        <form class="py-5">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 p-4" placeholder="Name of Pet CareTaker" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control border-0 p-4" placeholder="Comments" required="required" rows="4" cols="50"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                      <div class="rating">
+                                          <input id="star5" name="star" type="radio" value="5" class="radio-btn hide" />
+                                          <label for="star5">☆</label>
+                                          <input id="star4" name="star" type="radio" value="4" class="radio-btn hide" />
+                                          <label for="star4" >☆</label>
+                                          <input id="star3" name="star" type="radio" value="3" class="radio-btn hide" />
+                                          <label for="star3" >☆</label>
+                                          <input id="star2" name="star" type="radio" value="2" class="radio-btn hide" />
+                                          <label for="star2" >☆</label>
+                                          <input id="star1" name="star" type="radio" value="1" class="radio-btn hide" />
+                                          <label for="star1" >☆</label>
+                                          <div class="clear"></div>
+                                      </div>
+                                    </div>
+                                <button class="btn btn-dark btn-block border-0 py-3">Submit</button>
+                            </div>
+                    
+                        </form>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- Booking Start -->
+
+
+    
+
+    <!-- Footer Start -->
+     <!-- Footer Start -->
+     <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-4 col-md-12 mb-5">
+                <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-primary">Pet Sitter</span></h1>
+                <p class="m-0">Connect with pet lovers within no time.
+                    Take a hassle free journey without worrying about your pets.
+                    </p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary mb-4">Get In Touch</h5>
+                        
+                        <p><i class="fa fa-envelope mr-2"></i>petsitter2023@gmail.com</p>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">
+                    &copy; <a class="text-white font-weight-bold" href="#">PetSitter2023</a>
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
